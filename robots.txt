@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://LuckyCandy.github.io/sitemap.xml
+Sitemap: https://luckycandy.github.io/sitemap.xml
