@@ -1,35 +1,35 @@
-<?xml-stylesheet type="text/xsl" href="https://luckycandy.github.io/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://LuckyCandy.github.io/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://luckycandy.github.io/</loc>
+    <loc>https://LuckyCandy.github.io/</loc>
     <lastmod>2022-03-08T11:33:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luckycandy.github.io/post/test/post-title/</loc>
+    <loc>https://LuckyCandy.github.io/post/</loc>
     <lastmod>2022-03-08T11:33:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luckycandy.github.io/post/</loc>
+    <loc>https://LuckyCandy.github.io/post/test/performance-test/</loc>
     <lastmod>2022-03-08T11:33:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luckycandy.github.io/categories/</loc>
+    <loc>https://LuckyCandy.github.io/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luckycandy.github.io/tags/</loc>
+    <loc>https://LuckyCandy.github.io/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
