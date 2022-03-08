@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>性能测试 - Damon</title>
+  <title>编译安装PHP7.4 - Damon</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Damon" /><meta name="description" content="性能测试 1. 性能测试关注指标解释 1.1 响应时间 对一次请求做出响应所需要的时间（2/5/8） 1.1 并发用户数 某一时间同时向软件提交请求的用户数（系统用户" /><meta name="keywords" content="Hugo, Damon, Blog" />
+<meta name="author" content="Damon" /><meta name="description" content="操作环境： php: https://www.php.net/distributions/php-7.4.21.tar.gz os: CentOS Linux release 7.9.2009 (Core) 1. 解压安装文件 # 一般我会把资源文件放到/usr/local/src下 $ cd /usr/local/src # 没有wget可以yum安装下，或直接用" /><meta name="keywords" content="Hugo, Damon, Blog" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.89.2 with theme even" />
 
 
-<link rel="canonical" href="https://luckycandy.github.io/post/test/performance-test/" />
+<link rel="canonical" href="https://luckycandy.github.io/post/php/php-install/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -39,20 +39,20 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="性能测试" />
-<meta property="og:description" content="性能测试 1. 性能测试关注指标解释 1.1 响应时间 对一次请求做出响应所需要的时间（2/5/8） 1.1 并发用户数 某一时间同时向软件提交请求的用户数（系统用户" />
+<meta property="og:title" content="编译安装PHP7.4" />
+<meta property="og:description" content="操作环境： php: https://www.php.net/distributions/php-7.4.21.tar.gz os: CentOS Linux release 7.9.2009 (Core) 1. 解压安装文件 # 一般我会把资源文件放到/usr/local/src下 $ cd /usr/local/src # 没有wget可以yum安装下，或直接用" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://luckycandy.github.io/post/test/performance-test/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-03-08T11:33:11+08:00" />
-<meta property="article:modified_time" content="2022-03-08T11:33:11+08:00" />
+<meta property="og:url" content="https://luckycandy.github.io/post/php/php-install/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-06-13T12:30:34+08:00" />
+<meta property="article:modified_time" content="2018-06-13T12:30:34+08:00" />
 
-<meta itemprop="name" content="性能测试">
-<meta itemprop="description" content="性能测试 1. 性能测试关注指标解释 1.1 响应时间 对一次请求做出响应所需要的时间（2/5/8） 1.1 并发用户数 某一时间同时向软件提交请求的用户数（系统用户"><meta itemprop="datePublished" content="2022-03-08T11:33:11+08:00" />
-<meta itemprop="dateModified" content="2022-03-08T11:33:11+08:00" />
-<meta itemprop="wordCount" content="322">
-<meta itemprop="keywords" content="test," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="性能测试"/>
-<meta name="twitter:description" content="性能测试 1. 性能测试关注指标解释 1.1 响应时间 对一次请求做出响应所需要的时间（2/5/8） 1.1 并发用户数 某一时间同时向软件提交请求的用户数（系统用户"/>
+<meta itemprop="name" content="编译安装PHP7.4">
+<meta itemprop="description" content="操作环境： php: https://www.php.net/distributions/php-7.4.21.tar.gz os: CentOS Linux release 7.9.2009 (Core) 1. 解压安装文件 # 一般我会把资源文件放到/usr/local/src下 $ cd /usr/local/src # 没有wget可以yum安装下，或直接用"><meta itemprop="datePublished" content="2018-06-13T12:30:34+08:00" />
+<meta itemprop="dateModified" content="2018-06-13T12:30:34+08:00" />
+<meta itemprop="wordCount" content="290">
+<meta itemprop="keywords" content="php," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="编译安装PHP7.4"/>
+<meta name="twitter:description" content="操作环境： php: https://www.php.net/distributions/php-7.4.21.tar.gz os: CentOS Linux release 7.9.2009 (Core) 1. 解压安装文件 # 一般我会把资源文件放到/usr/local/src下 $ cd /usr/local/src # 没有wget可以yum安装下，或直接用"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -123,14 +123,14 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">性能测试</h1>
+      <h1 class="post-title">编译安装PHP7.4</h1>
 
       <div class="post-meta">
-        <span class="post-time"> March 8, 2022 </span>
+        <span class="post-time"> June 13, 2018 </span>
         <div class="post-category">
-            <a href="/categories/%E9%A1%B9%E7%9B%AE%E6%B5%8B%E8%AF%95/"> 项目测试 </a>
+            <a href="/categories/php/"> PHP </a>
             </div>
-          <span class="more-meta"> 约 322 字 </span>
+          <span class="more-meta"> 约 290 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         
       </div>
@@ -143,9 +143,13 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#性能测试">性能测试</a>
+        <li>
           <ul>
-            <li><a href="#1-性能测试关注指标解释">1. 性能测试关注指标解释</a></li>
+            <li><a href="#1-解压安装文件">1. 解压安装文件</a></li>
+            <li><a href="#2-安装依赖">2. 安装依赖</a></li>
+            <li><a href="#3-安装libpcre2-8">3. 安装libpcre2-8</a></li>
+            <li><a href="#4编译安装php">4.编译安装php</a></li>
+            <li><a href="#5-其他">5. 其他</a></li>
           </ul>
         </li>
       </ul>
@@ -154,42 +158,72 @@
 </nav>
   </div>
 </div>
+  <div class="post-outdated">
+    <div class="warn">
+      <p>【注意】最后更新于 <span class="timeago" datetime="2018-06-13T12:30:34" title="June 13, 2018">June 13, 2018</span>，文中内容可能已过时，请谨慎使用。</p>
+    </div>
+  </div>
     <div class="post-content">
-      <h2 id="性能测试">性能测试</h2>
-<h3 id="1-性能测试关注指标解释">1. 性能测试关注指标解释</h3>
-<h4 id="11-响应时间">1.1 响应时间</h4>
-<blockquote>
-<p>对一次请求做出响应所需要的时间（2/5/8）</p>
+      <blockquote>
+<p>操作环境：<br>
+php: <a href="https://www.php.net/distributions/php-7.4.21.tar.gz">https://www.php.net/distributions/php-7.4.21.tar.gz</a><br>
+os: CentOS Linux release 7.9.2009 (Core)</p>
 </blockquote>
-<h4 id="11-并发用户数">1.1 并发用户数</h4>
-<blockquote>
-<p>某一时间同时向软件提交请求的用户数（系统用户数 &gt; 在线用户数 &gt; 并发用户数）
-平均并发用户数 = n(T时间内访问过系统的用户数) * L(平均操作时间)/T
-预估并发用户数 = 注册用户 *(5% ~ 20%)</p>
-</blockquote>
-<h4 id="11-吞吐量">1.1 吞吐量</h4>
-<blockquote>
-<p>单位时间内系统处理用户的请求请求数，常用单位 请求数/秒，页面数/秒，字节/秒
-吞吐量 = VU(用户数) * R(请求数) / T(测试时长)
-TPS</p>
-</blockquote>
-<h4 id="11-资源使用率">1.1 资源使用率</h4>
-<blockquote>
-<p>CPU、Mem、Disk在性能测试期间的表现
-========</p>
-</blockquote>
-<p>测试步骤</p>
-<ol>
-<li>准备环境
-1.1 网络环境(<a href="https://trafficcontrol.apache.org/">TrafficControl</a>, <a href="https://www.charlesproxy.com/">Charles</a>)
-1.2 数据初始化
-1.3 测试工具(脚本) 多个 &amp; 分角色(功能)运行</li>
-<li>Warm Up</li>
-</ol>
-<p>如何判断性能瓶颈？<a href="https://baike.baidu.com/item/%E6%9C%A8%E6%A1%B6%E6%95%88%E5%BA%94/870962?fr=aladdin">木桶效应</a></p>
-<ol>
-<li>手机性能测试数据绘图，分析性能拐点</li>
-</ol>
+<h3 id="1-解压安装文件">1. 解压安装文件</h3>
+<pre>
+# 一般我会把资源文件放到/usr/local/src下
+$ cd /usr/local/src
+# 没有wget可以yum安装下，或直接用curl也可以
+$ wget https://www.php.net/distributions/php-7.4.21.tar.gz
+$ tar -zxvf php-7.4.21.tar.gz
+$ cd php-7.4.21
+</pre>
+<h3 id="2-安装依赖">2. 安装依赖</h3>
+<pre>
+# 以下依赖是下面configure必须使用到的，如果有其他额外配置可自行安装
+$ yum install -y gcc gcc-c++ make zlib zlib-devel pcre pcre-devel libxml2 libxml2-devel krb5 krb5-devel openssl openssl-devel sqlite-devel m4 autoconf epel-release oniguruma oniguruma-devel
+</pre>
+<h3 id="3-安装libpcre2-8">3. 安装libpcre2-8</h3>
+<pre>
+$ cd /usr/local/src
+$ wget https://ftp.pcre.org/pub/pcre/pcre2-10.35.tar.gz
+$ tar -zxvf pcre2-10.35.tar.gz
+$./configure --prefix=/usr/local/pcre2 \
+  --enable-pcre2-16 \
+  --enable-pcre2-32 \
+  --enable-jit \
+  --enable-jit-sealloc
+$ make && make install
+$ export PKG_CONFIG_PATH=/usr/local/pcre2/lib/pkgconfig/
+</pre>
+<h3 id="4编译安装php">4.编译安装php</h3>
+<pre>
+$ cd /usr/local/src/php-7.4.21
+$ ./configure \
+  --prefix=/usr/local/php74 \
+  --with-config-file-path=/usr/local/etc \
+  --enable-fpm \
+  --with-fpm-user=www \
+  --with-fpm-group=www \
+  --with-openssl \
+  --with-kerberos \
+  --with-system-ciphers \
+  --with-external-pcre \
+  --with-pcre-jit \
+  --with-zlib \
+  --with-pdo-mysql \
+  --enable-bcmath \
+  --enable-mbstring
+# 如果没有出现错误就继续，反正我是没有😄
+$ make
+$ make install
+</pre>
+<h3 id="5-其他">5. 其他</h3>
+<ul>
+<li>配置PATH</li>
+<li>自启动</li>
+<li>php.ini 以及 php-fpm.conf修改</li>
+</ul>
 
     </div>
 
@@ -201,7 +235,7 @@ TPS</p>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        March 8, 2022
+        June 13, 2018
         
     </span>
   </p>
@@ -210,15 +244,15 @@ TPS</p>
 </div>
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/test/">test</a>
+          <a href="/tags/php/">php</a>
           </div>
       <nav class="post-nav">
-        
-        <a class="next" href="/post/arithmetic/pascals-triangle/">
-            <span class="next-text nav-default">杨辉三角</span>
-            <span class="next-text nav-mobile">下一篇</span>
-            <i class="iconfont icon-right"></i>
+        <a class="prev" href="/post/arithmetic/hanoi-tower/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">汉诺塔</span>
+            <span class="prev-text nav-mobile">上一篇</span>
           </a>
+        
       </nav>
     </footer>
   </article>
@@ -228,8 +262,8 @@ TPS</p>
     <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
       var gitalk = new Gitalk({
-        id: '2022-03-08 11:33:11 \u002b0800 CST',
-        title: '性能测试',
+        id: '2018-06-13 12:30:34 \u002b0800 CST',
+        title: '编译安装PHP7.4',
         clientID: 'b4ca6790487d299a9bf5',
         clientSecret: '95e239f03d25e503d6cd09959a01dd0db5e20158',
         repo: 'LuckyCandy.github.io',

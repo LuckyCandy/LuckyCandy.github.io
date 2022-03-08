@@ -6,6 +6,34 @@
     <description>Recent content in Tags on Damon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Damon</copyright><atom:link href="https://luckycandy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Damon</copyright>
+    <lastBuildDate>Tue, 08 Mar 2022 11:33:11 +0800</lastBuildDate><atom:link href="https://luckycandy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>test</title>
+      <link>https://luckycandy.github.io/tags/test/</link>
+      <pubDate>Tue, 08 Mar 2022 11:33:11 +0800</pubDate>
+      
+      <guid>https://luckycandy.github.io/tags/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://luckycandy.github.io/tags/python/</link>
+      <pubDate>Wed, 28 Nov 2018 10:34:03 +0800</pubDate>
+      
+      <guid>https://luckycandy.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>https://luckycandy.github.io/tags/php/</link>
+      <pubDate>Wed, 13 Jun 2018 12:30:34 +0800</pubDate>
+      
+      <guid>https://luckycandy.github.io/tags/php/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

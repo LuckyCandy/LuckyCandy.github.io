@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>性能测试 - Damon</title>
+  <title>汉诺塔 - Damon</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Damon" /><meta name="description" content="性能测试 1. 性能测试关注指标解释 1.1 响应时间 对一次请求做出响应所需要的时间（2/5/8） 1.1 并发用户数 某一时间同时向软件提交请求的用户数（系统用户" /><meta name="keywords" content="Hugo, Damon, Blog" />
+<meta name="author" content="Damon" /><meta name="description" content="汉诺塔：汉诺塔（又称河内塔）问题是源于印度一个古老传说的益智玩具。 大梵天创造世界的时候做了三根金刚石柱子，在一根柱子上从下往上按照大小顺序摞" /><meta name="keywords" content="Hugo, Damon, Blog" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.89.2 with theme even" />
 
 
-<link rel="canonical" href="https://luckycandy.github.io/post/test/performance-test/" />
+<link rel="canonical" href="https://luckycandy.github.io/post/arithmetic/hanoi-tower/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -39,20 +39,20 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="性能测试" />
-<meta property="og:description" content="性能测试 1. 性能测试关注指标解释 1.1 响应时间 对一次请求做出响应所需要的时间（2/5/8） 1.1 并发用户数 某一时间同时向软件提交请求的用户数（系统用户" />
+<meta property="og:title" content="汉诺塔" />
+<meta property="og:description" content="汉诺塔：汉诺塔（又称河内塔）问题是源于印度一个古老传说的益智玩具。 大梵天创造世界的时候做了三根金刚石柱子，在一根柱子上从下往上按照大小顺序摞" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://luckycandy.github.io/post/test/performance-test/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-03-08T11:33:11+08:00" />
-<meta property="article:modified_time" content="2022-03-08T11:33:11+08:00" />
+<meta property="og:url" content="https://luckycandy.github.io/post/arithmetic/hanoi-tower/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-11-24T10:30:02+08:00" />
+<meta property="article:modified_time" content="2018-11-24T10:30:02+08:00" />
 
-<meta itemprop="name" content="性能测试">
-<meta itemprop="description" content="性能测试 1. 性能测试关注指标解释 1.1 响应时间 对一次请求做出响应所需要的时间（2/5/8） 1.1 并发用户数 某一时间同时向软件提交请求的用户数（系统用户"><meta itemprop="datePublished" content="2022-03-08T11:33:11+08:00" />
-<meta itemprop="dateModified" content="2022-03-08T11:33:11+08:00" />
-<meta itemprop="wordCount" content="322">
-<meta itemprop="keywords" content="test," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="性能测试"/>
-<meta name="twitter:description" content="性能测试 1. 性能测试关注指标解释 1.1 响应时间 对一次请求做出响应所需要的时间（2/5/8） 1.1 并发用户数 某一时间同时向软件提交请求的用户数（系统用户"/>
+<meta itemprop="name" content="汉诺塔">
+<meta itemprop="description" content="汉诺塔：汉诺塔（又称河内塔）问题是源于印度一个古老传说的益智玩具。 大梵天创造世界的时候做了三根金刚石柱子，在一根柱子上从下往上按照大小顺序摞"><meta itemprop="datePublished" content="2018-11-24T10:30:02+08:00" />
+<meta itemprop="dateModified" content="2018-11-24T10:30:02+08:00" />
+<meta itemprop="wordCount" content="590">
+<meta itemprop="keywords" content="python," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="汉诺塔"/>
+<meta name="twitter:description" content="汉诺塔：汉诺塔（又称河内塔）问题是源于印度一个古老传说的益智玩具。 大梵天创造世界的时候做了三根金刚石柱子，在一根柱子上从下往上按照大小顺序摞"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -123,15 +123,15 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">性能测试</h1>
+      <h1 class="post-title">汉诺塔</h1>
 
       <div class="post-meta">
-        <span class="post-time"> March 8, 2022 </span>
+        <span class="post-time"> November 24, 2018 </span>
         <div class="post-category">
-            <a href="/categories/%E9%A1%B9%E7%9B%AE%E6%B5%8B%E8%AF%95/"> 项目测试 </a>
+            <a href="/categories/%E7%AE%97%E6%B3%95/"> 算法 </a>
             </div>
-          <span class="more-meta"> 约 322 字 </span>
-          <span class="more-meta"> 预计阅读 1 分钟 </span>
+          <span class="more-meta"> 约 590 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
         
       </div>
     </header>
@@ -143,9 +143,9 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#性能测试">性能测试</a>
+        <li>
           <ul>
-            <li><a href="#1-性能测试关注指标解释">1. 性能测试关注指标解释</a></li>
+            <li></li>
           </ul>
         </li>
       </ul>
@@ -154,42 +154,50 @@
 </nav>
   </div>
 </div>
+  <div class="post-outdated">
+    <div class="warn">
+      <p>【注意】最后更新于 <span class="timeago" datetime="2018-11-24T10:30:02" title="November 24, 2018">November 24, 2018</span>，文中内容可能已过时，请谨慎使用。</p>
+    </div>
+  </div>
     <div class="post-content">
-      <h2 id="性能测试">性能测试</h2>
-<h3 id="1-性能测试关注指标解释">1. 性能测试关注指标解释</h3>
-<h4 id="11-响应时间">1.1 响应时间</h4>
-<blockquote>
-<p>对一次请求做出响应所需要的时间（2/5/8）</p>
+      <blockquote>
+<p>汉诺塔：汉诺塔（又称河内塔）问题是源于印度一个古老传说的益智玩具。
+大梵天创造世界的时候做了三根金刚石柱子，在一根柱子上从下往上按照大小顺序摞着64片黄金圆盘。
+大梵天命令婆罗门把圆盘从下面开始按大小顺序重新摆放在另一根柱子上。并且规定，在小圆盘上不能放大圆盘，在三根柱子之间一次只能移动一个圆盘</p>
 </blockquote>
-<h4 id="11-并发用户数">1.1 并发用户数</h4>
-<blockquote>
-<p>某一时间同时向软件提交请求的用户数（系统用户数 &gt; 在线用户数 &gt; 并发用户数）
-平均并发用户数 = n(T时间内访问过系统的用户数) * L(平均操作时间)/T
-预估并发用户数 = 注册用户 *(5% ~ 20%)</p>
-</blockquote>
-<h4 id="11-吞吐量">1.1 吞吐量</h4>
-<blockquote>
-<p>单位时间内系统处理用户的请求请求数，常用单位 请求数/秒，页面数/秒，字节/秒
-吞吐量 = VU(用户数) * R(请求数) / T(测试时长)
-TPS</p>
-</blockquote>
-<h4 id="11-资源使用率">1.1 资源使用率</h4>
-<blockquote>
-<p>CPU、Mem、Disk在性能测试期间的表现
-========</p>
-</blockquote>
-<p>测试步骤</p>
+<h4 id="目标将a上的圆盘移动到c">目标：将A上的圆盘移动到C</h4>
 <ol>
-<li>准备环境
-1.1 网络环境(<a href="https://trafficcontrol.apache.org/">TrafficControl</a>, <a href="https://www.charlesproxy.com/">Charles</a>)
-1.2 数据初始化
-1.3 测试工具(脚本) 多个 &amp; 分角色(功能)运行</li>
-<li>Warm Up</li>
+<li>思路
+从圆盘较少然后依次增加找规律：数字代表圆盘大小和位置 <br/></li>
 </ol>
-<p>如何判断性能瓶颈？<a href="https://baike.baidu.com/item/%E6%9C%A8%E6%A1%B6%E6%95%88%E5%BA%94/870962?fr=aladdin">木桶效应</a></p>
-<ol>
-<li>手机性能测试数据绘图，分析性能拐点</li>
+<ul>
+<li>当A只有一个圆盘时(1)，不用想直接A -&gt; C<br/></li>
+<li>当A只有两个圆盘时(1/2)，要借助B完成。先 A -&gt; B,然后就可以把<strong>最大</strong>一个从A -&gt; C,<strong>先不着急B -&gt; C</strong>. 分析一下此时C有最大的圆盘，那么任何圆盘都可以直接放到C上，此时C可以认为是空的。B上有一个圆盘，如果把<strong>B看做A，A看做B</strong>，就回到了&lt;1&gt;那种情况<br/></li>
+<li>当A只有三个圆盘时(1/2/3)，先不要着急移动。想要把A上的圆盘全部移动到C上，必定需要把A最底部的最大的圆盘移动到C.<strong>将1/2两个圆盘看做一个整体</strong>，则可以直接按照&lt;2&gt;操作了，超级伪代码如下：</li>
+</ul>
+<pre style="padding: 10px 35px">
+A(1/2) -> B
+A(3) -> C
+B(1/2) -> C
+执行<2>的步骤
+</pre>
+<ol start="2">
+<li>代码实现</li>
 </ol>
+<pre style="padding: 10px 35px">
+# n代表圆盘的数量，a,b,c代表柱子
+def move(n, a, b, c):
+    if n == 1:
+        print("从 %s 移动一个圆盘到 %s" % (a, c))
+    else:
+        # 将圆盘数-1(除去最大的圆盘)借助c移动到b
+        move(n-1, a, c, b)
+        # 将a上最大圆盘一定到c
+        print("从 %s 移动一个圆盘到 %s" % (a, c))
+        # 将a看做b，b看做a，重复执行
+        move(n-1, b, a, c)
+move(3, "A", "B", "c")
+</pre>
 
     </div>
 
@@ -201,7 +209,7 @@ TPS</p>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        March 8, 2022
+        November 24, 2018
         
     </span>
   </p>
@@ -210,12 +218,16 @@ TPS</p>
 </div>
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/test/">test</a>
+          <a href="/tags/python/">python</a>
           </div>
       <nav class="post-nav">
-        
-        <a class="next" href="/post/arithmetic/pascals-triangle/">
-            <span class="next-text nav-default">杨辉三角</span>
+        <a class="prev" href="/post/arithmetic/pascals-triangle/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">杨辉三角</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/php/php-install/">
+            <span class="next-text nav-default">编译安装PHP7.4</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
@@ -228,8 +240,8 @@ TPS</p>
     <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
       var gitalk = new Gitalk({
-        id: '2022-03-08 11:33:11 \u002b0800 CST',
-        title: '性能测试',
+        id: '2018-11-24 10:30:02 \u002b0800 CST',
+        title: '汉诺塔',
         clientID: 'b4ca6790487d299a9bf5',
         clientSecret: '95e239f03d25e503d6cd09959a01dd0db5e20158',
         repo: 'LuckyCandy.github.io',
