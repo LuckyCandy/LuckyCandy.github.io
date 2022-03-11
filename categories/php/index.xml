@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PHP on Damon</title>
-    <link>https://luckycandy.github.io/categories/php/</link>
+    <link>http://localhost:1313/categories/php/</link>
     <description>Recent content in PHP on Damon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Damon</copyright>
-    <lastBuildDate>Wed, 13 Jun 2018 12:30:34 +0800</lastBuildDate><atom:link href="https://luckycandy.github.io/categories/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jun 2018 12:30:34 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/php/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>编译安装PHP7.4</title>
-      <link>https://luckycandy.github.io/post/php/php-install/</link>
+      <link>http://localhost:1313/post/php/php-install/</link>
       <pubDate>Wed, 13 Jun 2018 12:30:34 +0800</pubDate>
       
-      <guid>https://luckycandy.github.io/post/php/php-install/</guid>
+      <guid>http://localhost:1313/post/php/php-install/</guid>
       <description>操作环境： php: https://www.php.net/distributions/php-7.4.21.tar.gz os: CentOS Linux release 7.9.2009 (Core) 1. 解压安装文件 # 一般我会把资源文件放到/usr/local/src下 $ cd /usr/local/src # 没有wget可以yum安装下，或直接用</description>
     </item>
     

@@ -2,36 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Damon</title>
-    <link>https://luckycandy.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Damon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Damon</copyright>
-    <lastBuildDate>Tue, 08 Mar 2022 11:33:11 +0800</lastBuildDate><atom:link href="https://luckycandy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Mar 2022 13:26:11 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>java</title>
+      <link>http://localhost:1313/tags/java/</link>
+      <pubDate>Fri, 11 Mar 2022 13:26:11 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/java/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>test</title>
-      <link>https://luckycandy.github.io/tags/test/</link>
+      <link>http://localhost:1313/tags/test/</link>
       <pubDate>Tue, 08 Mar 2022 11:33:11 +0800</pubDate>
       
-      <guid>https://luckycandy.github.io/tags/test/</guid>
+      <guid>http://localhost:1313/tags/test/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>https://luckycandy.github.io/tags/python/</link>
+      <link>http://localhost:1313/tags/python/</link>
       <pubDate>Wed, 28 Nov 2018 10:34:03 +0800</pubDate>
       
-      <guid>https://luckycandy.github.io/tags/python/</guid>
+      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>php</title>
-      <link>https://luckycandy.github.io/tags/php/</link>
+      <link>http://localhost:1313/tags/php/</link>
       <pubDate>Wed, 13 Jun 2018 12:30:34 +0800</pubDate>
       
-      <guid>https://luckycandy.github.io/tags/php/</guid>
+      <guid>http://localhost:1313/tags/php/</guid>
       <description></description>
     </item>
     

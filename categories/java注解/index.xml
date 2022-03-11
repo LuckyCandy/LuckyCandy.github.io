@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java注解 on Damon</title>
+    <link>http://localhost:1313/categories/java%E6%B3%A8%E8%A7%A3/</link>
+    <description>Recent content in java注解 on Damon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Damon</copyright>
+    <lastBuildDate>Fri, 11 Mar 2022 13:26:11 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/java%E6%B3%A8%E8%A7%A3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>javax.validation注解说明</title>
+      <link>http://localhost:1313/post/java/javax.validation/</link>
+      <pubDate>Fri, 11 Mar 2022 13:26:11 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java/javax.validation/</guid>
+      <description>使用javax.validation的一系列注解可以帮我们完成参数校验,免去繁琐的串行校验。 引入 javax.validation validation-api 1.1.0.Final org.hibernate hibernate-validator 5.4.1.Final 注解说明 注解 验证类型 说明 @AssertFalse Boolean, boolean 验</description>
+    </item>
+    
+  </channel>
+</rss>
