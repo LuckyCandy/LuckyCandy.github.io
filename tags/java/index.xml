@@ -14,7 +14,7 @@
       <pubDate>Fri, 11 Mar 2022 13:26:11 +0800</pubDate>
       
       <guid>http://localhost:1313/post/java/javax.validation/</guid>
-      <description>使用javax.validation的一系列注解可以帮我们完成参数校验,免去繁琐的串行校验。 引入 javax.validation validation-api 1.1.0.Final org.hibernate hibernate-validator 5.4.1.Final 注解说明 注解 验证类型 说明 @AssertFalse Boolean, boolean 验</description>
+      <description>使用javax.validation的一系列注解可以帮我们完成参数校验,免去繁琐的串行校验。 引入 1 2 3 4 5 6 7 8 9 10 11 12 &amp;lt;!-- JSR-303 --&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;javax.validation&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;validation-api&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.1.0.Final&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;!-- 实</description>
     </item>
     
   </channel>
