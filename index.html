@@ -126,8 +126,8 @@
         gitalk.options.id = SparkMD5.hashBinary(target.pathname)
       }
       if (target.target == '_blank') {
-        window.open(target.href)
         event.preventDefault()
+        window.open(target.href)
       }
     });
 
