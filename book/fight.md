@@ -1,0 +1,1 @@
+<img class="f-cover" src='/assets/imgs/book/fight.jpg' />

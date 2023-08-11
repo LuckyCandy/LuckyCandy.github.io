@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+  <meta name="description" content="雁过留声，总要留下些什么吧！">
+  <title>沧海拾遗</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css" />
+  <link rel="stylesheet" href="/assets/css/toc.css">
+  <link rel="stylesheet" href="/assets/css/bg.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    :root {
+      --sidebar-toggle-background: green;
+      --sidebar-toggle-icon-color: white;
+      --sidebar-name-margin: 1rem 0 0;
+      --sidebar-name-color: black;
+      --search-margin: 1rem 0 0;
+      --cover-background-image: var(--damon-cover-background-image);
+      --cover-background-mask-opacity: 0.1;
+      --cover-color: #e1d9d9;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="app">Loading....</div>
+
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script> -->
+  <script src="/assets/js/edit_on_github.js"></script>
+  <script src="/assets/js/damon.js"></script>
+  <script>
+    // Docsify
+    window.$docsify = {
+      name: '<div class="logo-container"><img src="/assets/imgs/head_img.jpeg"/><span>沧海拾遗</span></div>',
+      nameLink: 'http://localhost:3000/#/README',
+      repo: 'https://github.com/LuckyCandy',
+      coverpage: true,
+      onlyCover: true,
+      loadSidebar: true,
+      auto2top: true,
+      maxLevel: 3,
+      subMaxLevel: 0,
+      executeScript: true,
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '全文搜索',
+        noData: '找不到结果',
+        depth: 4,
+        hideOtherSidebarContent: false,
+        namespace: 'Damon'
+      },
+      toc: {
+        tocMaxLevel: 5,
+        target: 'h2, h3, h4, h5, h6',
+        ignoreHeaders: ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
+      },
+      timeUpdater: {
+        text: "最后修改于: {docsify-updated}",
+        formatUpdated: "{YYYY}/{MM}/{DD}",
+      },
+      // 自定义markdown解析规则
+      markdown: {
+        renderer: {
+          paragraph: function(text) {
+            return damon.parseParagraph(text);
+          }
+        }
+      },
+      plugins: [
+        // 在Github直接编辑
+        EditOnGithubPlugin.create(
+          'https://github.com/LuckyCandy/LuckyCandy.github.io/blob/main/',
+          null,
+          function (file) {
+            return '编辑'
+          }
+        )
+      ]
+    };
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/click_heart.js"></script>
+  <script src="/assets/js/toc.js"></script>
+  <script src="/assets/js/plugins.mix.js"></script>
+  <!-- Gitalk -->
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <!-- md5 -->
+  <script src="/assets/js/spark-md5.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: '42925af8fe30f972bf4f',
+      clientSecret: 'fdc3d87e9c81fe6acfb8732e6ce5399cdfb583a4',
+      repo: 'Comments',
+      owner: 'LuckyCandy',
+      admin: ['LuckyCandy'],
+      id: SparkMD5.hashBinary(window.location.hash),
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    })
+    window.onhashchange = function (event) {
+      if (event.newURL.split('#')[1] !== event.oldURL.split('#')[1]) {
+        gitalk.options.id = SparkMD5.hashBinary('#' + event.newURL.split('?')[1])
+      }
+    }
+
+  </script>
+  <!-- 访问量展示 -->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+
+</html>

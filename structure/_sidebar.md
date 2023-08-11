@@ -1,0 +1,2 @@
+- [初识“数据结构”](structure/1_introduce.md '数据结构')
+- [字符串](structure/2_string.md '字符串')

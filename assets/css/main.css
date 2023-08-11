@@ -1,0 +1,103 @@
+a.edit-on-github {
+  padding: 0 10px;
+  border-radius: 6px;
+  background-color: #f7f7f7;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  float: right;
+  margin-right: 2rem;
+}
+
+a.edit-on-github:hover {
+  background-color: green;
+  color: #fff;
+  text-decoration: none;
+}
+
+hr {
+  margin: 1rem 0 !important;
+}
+
+.docsify-pagination-container {
+  margin: 1rem 0 !important;
+}
+
+.pagination-item {
+  margin-top: 1.5rem !important;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container img {
+  width: 36px;
+  border-radius: 6px;
+}
+
+.logo-container span {
+  font-weight: 500;
+}
+
+.f-cover {
+  width: 100%;
+  border-radius: 15px;
+  border: 10px solid #f7f7f7;
+  box-shadow: 5px 5px 5px #3b3333;
+  margin-top: 2rem;
+}
+
+.poet {
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+
+.poet p:not(.author) {
+  letter-spacing: 0.5rem;
+  line-height: 2rem;
+  padding-bottom: 2rem;
+}
+
+.sentence {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-indent: 2rem;
+}
+
+.sentence span {
+  display: block;
+  text-align: right;
+  font-weight: 400;
+}
+
+.markdown-section table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.markdown-section table td,
+.markdown-section table th {
+  border: 1px solid #cad9ea;
+  color: #666;
+}
+
+.markdown-section table thead th {
+  background-color: #CCE8EB;
+  padding: 0.5rem 2rem;
+}
+
+.markdown-section table tr:nth-child(odd) {
+  background: #fff;
+}
+
+.markdown-section table tr:nth-child(even) {
+  background: #F5FAFA;
+}

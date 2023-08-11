@@ -1,0 +1,3 @@
+- [算法](/algorithm/README.md)
+    - [递归算法](algorithm/recursion.md)
+    - [贪心算法](algorithm/greedy.md)
