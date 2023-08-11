@@ -1,5 +1,5 @@
 <!-- _coverpage.md -->
-<img width="180px" style="border-radius:50%" bor src="assets/imgs/head_img.jpeg">
+<img width="180px" style="border-radius:50%" bor src="/assets/imgs/head_img.jpeg">
 
 # 万象笔记
 
@@ -11,4 +11,4 @@
 
 [进入博客](/README.md)
 
-![](assets/imgs/bg.png)
+![](/assets/imgs/bg.png)
