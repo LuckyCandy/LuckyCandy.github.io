@@ -117,7 +117,7 @@
     })
     window.onhashchange = function (event) {
       if (event.newURL.split('#')[1] !== event.oldURL.split('#')[1]) {
-        gitalk.options.id = SparkMD5.hashBinary('#' + event.newURL.split('?')[1])
+        gitalk.options.id = SparkMD5.hashBinary('#' + event.newURL.split('#')[1])
       }
     }
 
