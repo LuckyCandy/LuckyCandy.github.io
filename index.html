@@ -43,7 +43,7 @@
       name: '<div class="logo-container"><img src="/assets/imgs/head_img.jpeg"/><span>沧海拾遗</span></div>',
       nameLink: 'https://luckycandy.github.io/#/README',
       repo: 'https://github.com/LuckyCandy',
-      routerMode: 'history',
+      routerMode: 'hash',
       coverpage: true,
       onlyCover: true,
       loadSidebar: true,
@@ -117,17 +117,13 @@
     })
     // 当页面变化时，重置Gittalk的id
     window.addEventListener('popstate', function (event) {
-      gitalk.options.id = SparkMD5.hashBinary(window.location.pathname)
+      gitalk.options.id = SparkMD5.hashBinary(window.location.hash)
     })
 
     document.addEventListener('click', function (event) {
       var target = event.target;
-      if (target.tagName === 'A' && target.pathname != '') {
-        gitalk.options.id = SparkMD5.hashBinary(target.pathname);
-      }
       if (target.target === '_blank') {
         var old = window.location.href;
-        console.log('11111111', old)
         event.preventDefault();
         window.open(target.href, '_blank');
         window.location.href = old;
