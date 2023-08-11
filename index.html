@@ -44,6 +44,7 @@
       name: '<div class="logo-container"><img src="/assets/imgs/head_img.jpeg"/><span>沧海拾遗</span></div>',
       nameLink: 'https://luckycandy.github.io/#/README',
       repo: 'https://github.com/LuckyCandy',
+      routerMode: 'history',
       coverpage: true,
       onlyCover: true,
       loadSidebar: true,
@@ -72,7 +73,7 @@
       // 自定义markdown解析规则
       markdown: {
         renderer: {
-          paragraph: function(text) {
+          paragraph: function (text) {
             return damon.parseParagraph(text);
           }
         }
@@ -111,15 +112,21 @@
       repo: 'Comments',
       owner: 'LuckyCandy',
       admin: ['LuckyCandy'],
-      id: SparkMD5.hashBinary(window.location.hash),
+      id: SparkMD5.hashBinary(window.location.pathname),
       // facebook-like distraction free mode
       distractionFreeMode: false
     })
-    window.onhashchange = function (event) {
-      if (event.newURL.split('#')[1] !== event.oldURL.split('#')[1]) {
-        gitalk.options.id = SparkMD5.hashBinary('#' + event.newURL.split('#')[1])
+    // 当页面变化时，重置Gittalk的id
+    window.addEventListener('popstate', function (event) {
+      gitalk.options.id = SparkMD5.hashBinary(window.location.pathname)
+    })
+
+    document.addEventListener('click', function (event) {
+      var target = event.target;
+      if (target.tagName === 'A' && target.pathname != '') {
+        gitalk.options.id = SparkMD5.hashBinary(target.pathname)
       }
-    }
+    });
 
   </script>
   <!-- 访问量展示 -->
