@@ -120,15 +120,20 @@
       gitalk.options.id = SparkMD5.hashBinary(window.location.pathname)
     })
 
-    document.addEventListener('click', function (event) {
-      var target = event.target;
-      if (target.tagName === 'A' && target.pathname != '') {
-        gitalk.options.id = SparkMD5.hashBinary(target.pathname);
-      }
-      if (target.target == '_blank') {
-        event.preventDefault();
-        window.open(target.href, '_blank');
-        return;
+    document.addEventListener('DOMContentLoaded', function () {
+      var links = document.getElementsByTagName('a');
+
+      for (var i = 0; i < links.length; i++) {
+        var link = links[i];
+
+        if (link.getAttribute('href').startsWith('http')) {
+          link.addEventListener('click', function (event) {
+            if (this.target === '_blank') {
+              event.preventDefault();
+              window.open(this.href, '_blank');
+            }
+          });
+        }
       }
     });
 
