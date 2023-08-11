@@ -40,7 +40,6 @@
   <script>
     // Docsify
     window.$docsify = {
-      basePath: 'https://luckycandy.github.io/',
       name: '<div class="logo-container"><img src="/assets/imgs/head_img.jpeg"/><span>沧海拾遗</span></div>',
       nameLink: 'https://luckycandy.github.io/#/README',
       repo: 'https://github.com/LuckyCandy',
@@ -82,8 +81,9 @@
         // 在Github直接编辑
         EditOnGithubPlugin.create(
           'https://github.com/LuckyCandy/LuckyCandy.github.io/blob/main/',
-          null,
+          '',
           function (file) {
+            console.log('11111', file)
             return '编辑'
           }
         )
