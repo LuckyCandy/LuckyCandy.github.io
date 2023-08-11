@@ -81,9 +81,8 @@
         // 在Github直接编辑
         EditOnGithubPlugin.create(
           'https://github.com/LuckyCandy/LuckyCandy.github.io/blob/main/',
-          '',
+          null,
           function (file) {
-            console.log('11111', file)
             return '编辑'
           }
         )
@@ -125,6 +124,10 @@
       var target = event.target;
       if (target.tagName === 'A' && target.pathname != '') {
         gitalk.options.id = SparkMD5.hashBinary(target.pathname)
+      }
+      if (target.target == '_blank') {
+        window.open(target.href)
+        event.preventDefault()
       }
     });
 
