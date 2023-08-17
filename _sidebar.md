@@ -1,5 +1,6 @@
 - **计算机**
-- [基础知识](/computer/ '冯诺依曼')
+- [组成原理](/computer/base/ '冯诺依曼')
+- [网络](/computer/network/ '计算机网络')
 - [运维相关](/ops/)
 - [算法](/algorithm/)
 - [数据结构](/structure/)
