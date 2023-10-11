@@ -1,3 +1,7 @@
-- **计算机体系结构**
+- **一、计算机体系结构**
 - [组成原理](/architect/architecture/compose.md '硬件组成')
 - [指令](/architect/architecture/instruct.md '指令')
+- [校验码](/architect/architecture/checkcode '校验码')
+- [存储系统](/architect/architecture/storage.md '存储系统')
+- [磁盘阵列](/architect/architecture/raid '磁盘阵列')
+- [总线](/architect/architecture/bus '总线')
