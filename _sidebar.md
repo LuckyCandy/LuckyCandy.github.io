@@ -1,5 +1,5 @@
 - **计算机**
-- [组成原理](/computer/base/ '冯诺依曼')
+- [架构师-软考](/architect/ '架构师考试')
 - [网络](/computer/network/ '计算机网络')
 - [运维相关](/ops/)
 - [算法](/algorithm/)
