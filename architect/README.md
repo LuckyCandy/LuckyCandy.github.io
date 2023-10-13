@@ -68,5 +68,5 @@
 |2017|论软件系统建模方法|论软件建构风格|论无服务器架构及其应用|论软件质量保证|
 
 ## 4.附录！
-<img class="f-cover" src="/assets/imgs/architect/architecture/zhs_back.png">
-<img class="f-cover" src="/assets/imgs/architect/architecture/zhs_front.png">
+<img class="f-cover" src="/assets/imgs/architect/zhs_back.png">
+<img class="f-cover" src="/assets/imgs/architect/zhs_front.png">

@@ -5,3 +5,5 @@
 - [存储系统](/architect/architecture/storage.md '存储系统')
 - [磁盘阵列](/architect/architecture/raid '磁盘阵列')
 - [总线](/architect/architecture/bus '总线')
+- **二、系统性能**
+- [性能评价](/architect/performance/evaluation.md '性能评价')
