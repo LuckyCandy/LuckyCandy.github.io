@@ -5,3 +5,6 @@
 - [存储系统](/architect/architecture/storage.md '存储系统')
 - [磁盘阵列](/architect/architecture/raid '磁盘阵列')
 - [总线](/architect/architecture/bus '总线')
+- **七、软件工程**
+- [概述](/architect/software/preface '软件工程概述')
+- [软件开发方法](/architect/software/methods '软件开发方法')
