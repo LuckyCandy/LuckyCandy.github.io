@@ -25,5 +25,6 @@
 - [NoSQL数据库](/architect/database/nosql 'NoSQL数据库')
 - [优化技术](/architect/database/refine '数据库优化技术')
 - [Redis](/architect/database/redis '数据库缓存技术')
-
-
+- **六、软件工程**
+- [概述](/architect/software/preface '软件工程概述')
+- [软件开发方法](/architect/software/methods '软件开发方法')
