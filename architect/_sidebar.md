@@ -28,3 +28,8 @@
 - **六、软件工程**
 - [概述](/architect/software/preface '软件工程概述')
 - [软件开发方法](/architect/software/methods '软件开发方法')
+- [开发模型](/architect/software/models '软件开发模型')
+- [软件重用和逆向软件工程](/architect/software/reuse '软件重用和逆向软件工程')
+- [系统分析](/architect/software/analyse '系统分析')
+- [系统设计](/architect/software/design '系统设计')
+- [系统测试与维护](/architect/software/test '系统测试与维护')
