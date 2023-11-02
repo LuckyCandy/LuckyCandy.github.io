@@ -11,8 +11,8 @@
   <title>沧海拾遗</title>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css" />
+  <link rel="stylesheet" href="/assets/css/theme-simple.css">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css" /> -->
   <link rel="stylesheet" href="/assets/css/toc.css">
   <link rel="stylesheet" href="/assets/css/bg.css">
   <link rel="stylesheet" href="/assets/css/main.css">
@@ -26,8 +26,9 @@
       --cover-background-image: var(--damon-cover-background-image);
       --cover-background-mask-opacity: 0.1;
       --cover-color: #e1d9d9;
-      --mark-background: #857928c7;
+      --mark-background: #852846c7;
       --mark-color: white;
+      --heading-h3-margin: 20px 0;
     }
   </style>
 
@@ -107,20 +108,20 @@
   <!-- md5 -->
   <script src="/assets/js/plugins/spark-md5.js"></script>
   <script>
-    const gitalk = new Gitalk({
-      clientID: '42925af8fe30f972bf4f',
-      clientSecret: 'fdc3d87e9c81fe6acfb8732e6ce5399cdfb583a4',
-      repo: 'Comments',
-      owner: 'LuckyCandy',
-      admin: ['LuckyCandy'],
-      id: SparkMD5.hashBinary(window.location.pathname),
-      // facebook-like distraction free mode
-      distractionFreeMode: false
-    })
-    // 当页面变化时，重置Gittalk的id
-    window.addEventListener('popstate', function (event) {
-      gitalk.options.id = SparkMD5.hashBinary(window.location.hash)
-    })
+    // const gitalk = new Gitalk({
+    //   clientID: '42925af8fe30f972bf4f',
+    //   clientSecret: 'fdc3d87e9c81fe6acfb8732e6ce5399cdfb583a4',
+    //   repo: 'Comments',
+    //   owner: 'LuckyCandy',
+    //   admin: ['LuckyCandy'],
+    //   id: SparkMD5.hashBinary(window.location.pathname),
+    //   // facebook-like distraction free mode
+    //   distractionFreeMode: false
+    // })
+    // // 当页面变化时，重置Gittalk的id
+    // window.addEventListener('popstate', function (event) {
+    //   gitalk.options.id = SparkMD5.hashBinary(window.location.hash)
+    // })
 
     document.addEventListener('click', function (event) {
       var target = event.target;

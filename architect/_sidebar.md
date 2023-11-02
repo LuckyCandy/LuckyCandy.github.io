@@ -5,7 +5,8 @@
 - [校验码](/architect/architecture/checkcode '校验码')
 - [磁盘阵列](/architect/architecture/raid '磁盘阵列')
 - [总线](/architect/architecture/bus '总线')
-- **二、系统性能**
+- **二、系统工程**
+- [系统工程学](/architect/performance/xtgcx.md '系统工程学')
 - [性能评价](/architect/performance/evaluation.md '性能评价')
 - **三、操作系统**
 - [进程管理](/architect/os/progress.md '进程管理')
@@ -32,4 +33,26 @@
 - [软件重用和逆向软件工程](/architect/software/reuse '软件重用和逆向软件工程')
 - [系统分析](/architect/software/analyse '系统分析')
 - [系统设计](/architect/software/design '系统设计')
-- [系统测试与维护](/architect/software/test '系统测试与维护')
+- [系统测试](/architect/software/test '系统测试')
+- [系统运行维护](/architect/software/maintain '系统运行维护')
+- **七、信息系统**
+- [信息系统基础](/architect/infomation/base '信息系统基础')
+- **八、系统架构设计**
+- [系统架构基础](/architect/framework/base '系统架构基础')
+- [系统架构风格](/architect/framework/style '系统架构风格')
+- [架构分类](/architect/framework/category '架构分类')
+- [架构评估](/architect/framework/evaluate '架构评估')
+- **九、案例题知识点**
+- [图](/architect/case/diagram '图')
+- [信息物理系统](/architect/case/cps '信息物理系统')
+- [质量属性](/architect/case/quality-attribute '质量属性')
+- [数据库](/architect/case/database '数据库')
+- [NoSQL数据库](/architect/case/nosql 'NoSQL数据库')
+- [缓存](/architect/case/cache '缓存Redis')
+- [架构风格](/architect/case/architectural-style '架构风格')
+- [lambda架构](/architect/case/lambda 'lambda架构')
+- [微服务](/architect/case/micro-service '微服务')
+- **十、论文**
+- [论文结构](/architect/thesis/structure '论文结构')
+- [论软件开发过程模型及应用](/architect/thesis/demo-1 '论软件开发过程模型及应用')
+- [论层次式架构及应用](/architect/thesis/demo-2 '论层次式架构及应用')

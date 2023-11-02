@@ -14,11 +14,11 @@ function plugin(hook, vm) {
     hook.mounted(function(){
         var e = Docsify.dom;
         // gitalk
-        var n = e.create("div");
-        n.id = "gitalk-container";
-        var t = e.getNode("#main");
-        n.style = "width: " + t.clientWidth + "px; margin: 40px auto 20px;";
-        e.appendTo(e.find(".content"), n)
+        // var n = e.create("div");
+        // n.id = "gitalk-container";
+        // var t = e.getNode("#main");
+        // n.style = "width: " + t.clientWidth + "px; margin: 40px auto 20px;";
+        // e.appendTo(e.find(".content"), n)
         // Copy Right
         var m = e.create("div");
         
@@ -29,8 +29,8 @@ function plugin(hook, vm) {
         e.appendTo(e.find(".content"), m)
     });
     hook.doneEach(function(i) {
-        for (var n = document.getElementById("gitalk-container"); n.hasChildNodes();) n.removeChild(n.firstChild);
-        gitalk.render("gitalk-container")
+        //for (var n = document.getElementById("gitalk-container"); n.hasChildNodes();) n.removeChild(n.firstChild);
+        //gitalk.render("gitalk-container")
         // 重新计算不蒜子访问数
         bszCaller.fetch("//busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallback", function(a) {
             bszTag.texts(a), bszTag.shows()
