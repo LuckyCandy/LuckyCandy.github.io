@@ -96,6 +96,7 @@ hr {
 .markdown-section table thead th {
   background-color: #CCE8EB;
   padding: 0.5rem 2rem;
+  white-space: nowrap;
 }
 
 .markdown-section table tr:nth-child(odd) {

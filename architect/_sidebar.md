@@ -52,7 +52,9 @@
 - [架构风格](/architect/case/architectural-style '架构风格')
 - [lambda架构](/architect/case/lambda 'lambda架构')
 - [微服务](/architect/case/micro-service '微服务')
+- [SOA](/architect/case/soa 'SOA')
+- [软件开发过程模型](/architect/case/gcmx '软件开发过程模型')
 - **十、论文**
 - [论文结构](/architect/thesis/structure '论文结构')
-- [论软件开发过程模型及应用](/architect/thesis/demo-1 '论软件开发过程模型及应用')
 - [论层次式架构及应用](/architect/thesis/demo-2 '论层次式架构及应用')
+- [论软件开发过程模型](/architect/thesis/demo-1 '论软件开发过程模型')
